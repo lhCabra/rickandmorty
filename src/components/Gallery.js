@@ -2,7 +2,7 @@
 import './Gallery.css';
 import { CardComponent } from './CardComponent';
 import React, { useState, useEffect } from 'react';
-function App() {
+function Gallery() {
   let [data, setData] = useState(null)
   useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gallery;
